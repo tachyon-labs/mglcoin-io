@@ -44,7 +44,7 @@
   },
   "scripts": {
     "client": "craco  start",
-    "server": "cd backend & npm start",
+    "server": "cd backend && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "craco test",
     "eject": "react-scripts eject"
