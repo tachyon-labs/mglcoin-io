@@ -17,6 +17,7 @@
     "country-list": "^2.2.0",
     "crypto": "^1.0.1",
     "detect-emoji-support": "^0.1.7",
+    "ethers": "^5.7.2",
     "firebase": "^9.5.0",
     "framer-motion": "^4.1.17",
     "fs": "^0.0.1-security",

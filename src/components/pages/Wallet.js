@@ -12,6 +12,7 @@ import WalletNav from '../component/WalletNav';
 import WalletPortfolio from '../views/WalletPortfolio';
 import WalletSend from '../views/WalletSend';
 import WalletActivity from '../views/WalletActivity';
+import ExternalWallet from '../views/ExternalWallet';
 import WalletManageKeys from '../views/WalletManageKeys';
 import WalletProfile from '../views/WalletProfile';
 import WalletBuy from '../views/Wallet/WalletBuy';
@@ -275,6 +276,9 @@ function Wallet() {
                     <WalletManageKeys network={network}/>
                   :idx===5?
                     <WalletProfile />
+                  :idx===6?
+                    <ExternalWallet />
+                                
                   :null
                 }
               </Row>

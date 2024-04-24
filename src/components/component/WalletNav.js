@@ -17,6 +17,7 @@ function WalletNav(props) {
     {name:t("Activity"),icon:<AiOutlineFieldTime size={30}className="inline"/>},
     {name:t("Wallet"),icon:<AiOutlineQrcode size={30}className="inline"/>},
     {name:t("Profile"),icon:<ImProfile size={30}className="inline"/>},
+    {name:t("External Wallet"),icon:<AiOutlineQrcode size={30}className="inline"/>},
   ];
   const [sel, setSel]=useState(0);
 
