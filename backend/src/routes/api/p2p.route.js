@@ -1,5 +1,3 @@
-
-
 const router = require('express').Router();
 const auth = require('../../middleware/auth.middleware');
 const Role = require('../../utils/userRoles.utils');
@@ -7,15 +5,15 @@ const awaitHandlerFactory = require('../../middleware/awaitHandlerFactory.middle
 const P2PController = require("../../controllers/p2p.controller.js");
 const multer = require('multer');
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, './upload')
-    },
-    filename: function (req, file, cb) {
-      cb(null, file.originalname)
-    }
+  destination: function(req, file, cb) {
+    cb(null, './upload')
+  },
+  filename: function(req, file, cb) {
+    cb(null, file.originalname)
+  }
 })
 
-const upload = multer({storage})
+const upload = multer({ storage })
 
 router.post('/create', auth(Role.Super), awaitHandlerFactory(P2PController.createP2P));
 router.post('/id/:id', auth(Role.Super), awaitHandlerFactory(P2PController.updateP2P));
